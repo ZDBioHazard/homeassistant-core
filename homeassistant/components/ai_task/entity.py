@@ -80,7 +80,7 @@ class AITaskEntity(RestoreEntity):
                     assistant=DOMAIN,
                     device_id=None,
                 ),
-                user_llm_prompt=DEFAULT_SYSTEM_PROMPT,
+                user_llm_prompt=task.system_prompt or DEFAULT_SYSTEM_PROMPT,
                 user_llm_hass_api=user_llm_hass_api,
             )
 
